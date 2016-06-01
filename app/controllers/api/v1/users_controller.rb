@@ -5,7 +5,7 @@ class Api::V1::UsersController < ApplicationController
 
 
   def index
-    @users = User.all
+    @users = User.all #hello!
     render json: @users, status: 200
   end
 
