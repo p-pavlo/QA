@@ -3,10 +3,9 @@ class Api::V1::UsersController < ApplicationController
   rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
   rescue_from ActiveRecord::RecordInvalid,  with: :record_is_invalid
 
-
   def index
     @users = User.all #hello!
-    render json: @users, status: 200
+    render json: @users, status: 200 #bla bla bla
   end
 
   def create
